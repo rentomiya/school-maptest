@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>学校案内図</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学校構内図＆待機時間</title>
+    <style>
+        /* 簡単なデザインの設定（スマホで見やすく調整） */
+        body { font-family: sans-serif; text-align: center; margin: 0; padding: 10px; background: #f5f5f5; }
+        .btn-container { margin-bottom: 20px; }
+        .btn { display: inline-block; padding: 10px 15px; margin: 5px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn:hover { background: #0056b3; }
+        .content-box { display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 1000px; margin: 0 auto; }
+        img { max-width: 100%; height: auto; border: 1px solid #ccc; background: white; }
+        iframe { width: 100%; max-width: 600px; height: 400px; border: 1px solid #ccc; }
+        /* パソコンなどの広い画面では横並びにする */
+        @media (min-width: 768px) {
+            .content-box { flex-direction: row; justify-content: center; align-items: flex-start; }
+            img { max-width: 60%; }
+            iframe { max-width: 35%; }
+        }
+    </style>
 </head>
 <body>
-  <h1>学校マップ</h1>
-  <p>ここに地図とデータを表示</p>
-  <img src="map0.jpg" alt="全体図">
+
+    <h1>学校構内図 案内サイト</h1>
+
+    <div class="btn-container">
+        <a href="index.html" class="btn" style="background:#333;">1階</a>
+        <a href="floor2.html" class="btn">2階</a>
+        <a href="floor3.html" class="btn">3階</a>
+        <a href="floor4.html" class="btn">4階</a>
+        <a href="floor5.html" class="btn">5階</a>
+        <a href="gym1.html" class="btn">体育館1F</a>
+        <a href="gym2.html" class="btn">体育館2F</a>
+    </div>
+
+    <div class="content-box">
+        <img src="map1.jpg" alt="1階構内図">
+        
+        <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://tokyoeducation-my.sharepoint.com/personal/k1033327_metro_ed_jp/_layouts/15/Doc.aspx?sourcedoc={6a946649-1216-4a15-af1c-2a362606c98e}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"></iframe>" frameborder="0" scrolling="no"></iframe>
+    </div>
+
 </body>
 </html>
